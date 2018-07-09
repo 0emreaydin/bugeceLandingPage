@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  position: relative; 
+}
+
+#section1 {
+  padding-top:100px;
+  height:100vh;
+  color: #000; 
+  background-color: #efe300;
+  position: relative;
+}
+
+#section2 {
+  padding-top:50px;
+  height:270px;
+  color: #000; 
+  background-color: #ffffff;
+}
+
+#section3 {
+  padding-top:50px;
+  height:500px;
+  color: #fff; 
+  background-color: #ff9800;
+}
+
+#section41 {
+  padding-top:50px;
+  min-height:500px;
+  color: #fff; 
+  background-color: #00bcd4;
+  height: auto;
+  overflow: auto;
+}
+
+#section42 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #009688;
+  height: auto;
+  overflow: auto;
+}
+
+#section43 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #abc;
+  height: auto;
+  overflow: auto;
+}
+
+#section44 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #ebc;
+  height: auto;
+  overflow: auto;
+}
+
+#section45 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #dda;
+  height: auto;
+  overflow: auto;
+}
+
+.col-md-6#divRight{
+  background-image: url('./images/phoneBanner.png');
+  height:85vh;
+  background-repeat: no-repeat;
+  background-size: 45vh;
+  background-position: center;
+}
+
+.col-md-6#divLeft{
+  height: 85vh;
+  box-sizing: border-box;
+}
+
+.col-md-6#divLeft > .center-element{
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-device-width: 480px) {
+  .col-md-6#divLeft{height: 5vh;}
+  .col-md-6#divLeft h1{font-size: 15px;}
+  #section1 { padding-top: 70px;} 
+  .btn{margin-top: -5rem;}
+  .col-md-8#info{text-align: center;}
+}
+
+.btn-outline-dark{
+  color:#343a40;
+  background-color:transparent;
+  background-image:none;
+  border-color:#343a40
+}
+
+.btn-outline-dark:hover{
+  color:#fff;
+  background-color:#343a40;
+  border-color:#343a40
+}
+
+.btn-outline-dark.focus, .btn-outline-dark:focus{
+  box-shadow:0 0 0 .2rem rgba(52,58,64,.5)
+}
+
+.btn-outline-dark.disabled,.btn-outline-dark:disabled{
+  color:#343a40;
+  background-color:transparent
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.show>.btn-outline-dark.dropdown-toggle{
+  color:#fff;
+  background-color:#343a40;
+  border-color:#343a40
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-dark.dropdown-toggle:focus{
+  box-shadow:0 0 0 .2rem rgba(52,58,64,.5)
+}
+
+.btn{
+  display:inline-block;
+  font-weight:400;
+  width: 200px;
+  height: 50px;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border: 2px solid ;
+  padding:.375rem .75rem;
+  font-size:2rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+@media screen and (prefers-reduced-motion:reduce){
+  .btn{transition:none}
+}
+.btn:focus,
+.btn:hover{
+  text-decoration:none
+}
+
+.btn.focus,.btn:focus{
+  outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+}
+
+.btn.disabled,.btn:disabled{
+  opacity:.65
+}
+  
+.btn:not(:disabled):not(.disabled){
+  cursor:pointer
+}
+  
+.btn:not(:disabled):not(.disabled).active,.btn:not(:disabled):not(.disabled):active{
+  background-image:none
+}
+  
+a.btn.disabled,fieldset:disabled a.btn{
+  pointer-events:none
+}
+
+#store{
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+#content{
+  position: relative;
+  height: auto;
+  min-height: 350px;
+}
+
+.row#content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.col-md-4{
+  height: 100%;
+}
+
+.col-md-4 > img{
+  height: 100%;
+}
+
+.col-md-12{
+  width: 100%;
+  height: 100%;
+}
+
+.col-md-8#info{
+  position: relative;
+  height: 350px;
+}
+
+.centerX{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
