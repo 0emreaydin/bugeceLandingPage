@@ -1,7 +1,12 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/BebasKai.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: myFirstFont;
   position: relative; 
 }
 
@@ -22,7 +27,7 @@ body {
 
 #section3 {
   padding-top:50px;
-  height:500px;
+  height:300px;
   color: #fff; 
   background-color: #ff9800;
 }
@@ -38,7 +43,7 @@ body {
 
 #section42 {
   padding-top:50px;
-  height:500px;
+  min-height:500px;
   color: #fff;
   background-color: #009688;
   height: auto;
@@ -47,7 +52,7 @@ body {
 
 #section43 {
   padding-top:50px;
-  height:500px;
+  min-height:500px;
   color: #fff;
   background-color: #abc;
   height: auto;
@@ -56,7 +61,7 @@ body {
 
 #section44 {
   padding-top:50px;
-  height:500px;
+  min-height:500px;
   color: #fff;
   background-color: #ebc;
   height: auto;
@@ -65,7 +70,7 @@ body {
 
 #section45 {
   padding-top:50px;
-  height:500px;
+  min-height:500px;
   color: #fff;
   background-color: #dda;
   height: auto;
@@ -88,11 +93,16 @@ body {
 .col-md-6#divLeft > .center-element{
   max-width: none;
   width: 100%;
-  margin: 0;
+  margin-left: 20%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.col-md-6#divLeft > .center-element h1{
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -101,6 +111,40 @@ body {
   #section1 { padding-top: 70px;} 
   .btn{margin-top: -5rem;}
   .col-md-8#info{text-align: center;}
+  .col-md-6#divRight{background-size: 40vh;}
+  .col-md-6#divLeft > .center-element{margin-left: 0%}
+  .col-md-12>p {margin-left: 10%; width: 100%;}
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, #DD2A7B, #F58529);;;
+  color: white;
 }
 
 .btn-outline-dark{
@@ -156,7 +200,7 @@ body {
   font-size:2rem;
   line-height:1.5;
   border-radius:.25rem;
-  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 @media screen and (prefers-reduced-motion:reduce){
