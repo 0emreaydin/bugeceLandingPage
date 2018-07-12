@@ -3,6 +3,23 @@
   src: url(./fonts/BebasKai.ttf);
 }
 
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.3);;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color:black;
+}
+
+.navbar-inverse .navbar-brand{
+  color:black;
+}
+
+.col-md-12#bannerLogo{
+  margin: 0;
+  width: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,70 +28,33 @@ body {
 }
 
 #section1 {
-  padding-top:100px;
+  padding-top:80px;
   height:100vh;
   color: #000; 
-  background-color: #efe300;
+  background-color: #f0c713;
   position: relative;
 }
 
 #section2 {
   padding-top:50px;
-  height:270px;
+  height:200px;
   color: #000; 
   background-color: #ffffff;
 }
 
 #section3 {
-  padding-top:50px;
-  height:300px;
+  padding-top:10px;
+  height:100px;
   color: #fff; 
-  background-color: #ff9800;
+  background-color: #f0c713;
 }
 
-#section41 {
-  padding-top:50px;
-  min-height:500px;
-  color: #fff; 
-  background-color: #00bcd4;
-  height: auto;
-  overflow: auto;
-}
-
-#section42 {
-  padding-top:50px;
-  min-height:500px;
-  color: #fff;
-  background-color: #009688;
-  height: auto;
-  overflow: auto;
-}
-
-#section43 {
-  padding-top:50px;
-  min-height:500px;
-  color: #fff;
+#section4 {
+  padding-top:100px;
+  height:110vh;
+  color: #000; 
   background-color: #abc;
-  height: auto;
-  overflow: auto;
-}
-
-#section44 {
-  padding-top:50px;
-  min-height:500px;
-  color: #fff;
-  background-color: #ebc;
-  height: auto;
-  overflow: auto;
-}
-
-#section45 {
-  padding-top:50px;
-  min-height:500px;
-  color: #fff;
-  background-color: #dda;
-  height: auto;
-  overflow: auto;
+  position: relative;
 }
 
 .col-md-6#divRight{
@@ -105,23 +85,53 @@ body {
   margin-top: 30px;
 }
 
+#contentBody{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bannerText{
+  font-size: 64px;
+}
+
 @media only screen and (max-device-width: 480px) {
   .col-md-6#divLeft{height: 5vh;}
   .col-md-6#divLeft h1{font-size: 15px;}
-  #section1 { padding-top: 70px;} 
+  #section1 { padding-top: 70px; min-height: 1000px; padding-top: 40%;} 
   .btn{margin-top: -5rem;}
   .col-md-8#info{text-align: center;}
-  .col-md-6#divRight{background-size: 40vh;}
+  .col-md-6#divRight{background-size: 40vh; margin-top: 60%;}
   .col-md-6#divLeft > .center-element{margin-left: 0%}
-  .col-md-12>p {margin-left: 10%; width: 100%;}
+  .col-md-12 p {margin-left: 10%; width: 100%;}
+  #section4{min-height: 1800px;}
+  .navbar-inverse { background-color: #343a40; border-color: black; }
+  #store .row{ height: 100%; }
+  #store .row .col-md-6{ height: 100px; }
+  .navbar-inverse .navbar-brand{ color:white;}
+  .navbar-inverse .navbar-nav>li>a { color:white; }
 }
+
+#download{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.store-img{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -130,21 +140,22 @@ body {
 
 .fa:hover {
     opacity: 0.7;
+    text-decoration: none;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  width: 70px;
+  height: 70px;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+  width: 70px;
+  height: 70px;
 }
 
 .fa-instagram {
-  background: linear-gradient(to right, #DD2A7B, #F58529);;;
-  color: white;
+  width: 70px;
+  height: 70px;
 }
 
 .btn-outline-dark{
@@ -232,8 +243,8 @@ a.btn.disabled,fieldset:disabled a.btn{
 }
 
 #store{
-  width: 20%;
-  height: auto;
+  width: 80%;
+  min-height: 200%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%)
@@ -242,7 +253,7 @@ a.btn.disabled,fieldset:disabled a.btn{
 #content{
   position: relative;
   height: auto;
-  min-height: 350px;
+  min-height: 370px;
 }
 
 .row#content{
@@ -255,6 +266,10 @@ a.btn.disabled,fieldset:disabled a.btn{
 
 .col-md-4{
   height: 100%;
+}
+
+.col-md-4#info{
+  min-height: 230px;
 }
 
 .col-md-4 > img{
@@ -275,4 +290,26 @@ a.btn.disabled,fieldset:disabled a.btn{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+.node{
+  text-align: center;
+  width: 70%;
+  display: table;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+.node-content{
+  font-size: 12px;
+
+}
+
+.node-title{
+  font-weight: bold;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top:3%;
 }

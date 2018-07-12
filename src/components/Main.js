@@ -1,9 +1,5 @@
 import React from 'react';
-import { Guide } from './Guide';
-import { Calendar } from './Calendar';
-import { Speed } from './Speed';
-import { Bests } from './Bests';
-import { Ticket } from './Ticket';
+import { Content } from './Content';
 import { Banner } from './Banner';
 import { Download } from './Download';
 
@@ -12,29 +8,13 @@ export const Main = () => (
         <div id="section1" className="container-fluid">
             <Banner />
         </div>
-        <div id="section2" className="container-fluid">
-            <Download />
-        </div>
-        <div id="section41" className="container-fluid">
-            <Guide />
-        </div>
-        <div id="section42" className="container-fluid">
-            <Calendar/>
-        </div>
-        <div id="section43" className="container-fluid">
-            <Speed />
-        </div>
-        <div id="section44" className="container-fluid">
-            <Bests />
-        </div>
-        <div id="section45" className="container-fluid">
-            <Ticket />
+        <div id="section4" className="container-fluid">
+            <Content />
         </div>
         <div id="section3" className="container-fluid">
-            <h1>Bizi sosyal medyadan takip edebilirsiniz.</h1>
-            <a href="#" className="fa fa-facebook"></a>
-            <a href="#" className="fa fa-twitter"></a>
-            <a href="#" className="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/bugececo/" className="fa fa-facebook"></a>
+            <a href="https://twitter.com/bugececo" className="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/bugececo/" className="fa fa-instagram"></a>
         </div>
     </div>
 );

@@ -1,29 +1,22 @@
 import React from 'react';
 
 export const Header = () => (
-    <nav className="navbar navbar-inverse navbar-fixed-top">
-     <div className="container-fluid">
-      <div className="navbar-header">
+    <nav className="navbar navbar-inverse navbar-fixed-top"  style={{width:'100%'}}>
+     <div className="container-fluid"  style={{paddingRight:'0'}}>
+      <div className="navbar-header"  style={{marginRight:'0'}}>
        <button type="button" className="navbar-toggle" id="dlDropDown" data-toggle="collapse" data-target="#myNavbar">
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>                        
        </button>
-       <a className="navbar-brand">BUGECE</a>
+       <a className="navbar-brand" href="https://bugece.co/">BUGECE</a>
       </div>
       <div>
        <div className="collapse navbar-collapse" id="myNavbar">
         <ul className="nav navbar-nav ml-auto">
          <li><a href="#section1">Bugece App</a></li>
-         <li><a href="#section2">İndir</a></li>
+         <li><a href="#section4">Neden Bu Gece</a></li>
          <li><a href="#section3">İletişim</a></li>
-        </ul>
-        <ul className="nav navbar-nav mr-auto">
-         <li><a href="#section41">Rehber</a></li>
-         <li><a href="#section42">Tekvim</a></li>
-         <li><a href="#section43">Hız</a></li>
-         <li><a href="#section44">En İyiler</a></li>
-         <li><a href="#section45">Bilet</a></li>
         </ul>
        </div>
       </div>
