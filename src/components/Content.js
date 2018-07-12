@@ -27,7 +27,7 @@ export const Content = () => (
                                     Gece Hayatı Rehberi
                                 </div>
                                 <div class="node-content">
-                                    Bilet QR kodlarını kolaylıkla tarayabilir ve kapı operasyonunuzu hızlandırabilirsiniz.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ export const Content = () => (
                                     Sana Özel Takvim
                                 </div>
                                 <div class="node-content">
-                                    Her an tek tuşla farklı davetli listeleri oluşturabilir; ekleme/çıkarma yapabilir ve davetli girişlerini anlık takip edebilirsiniz.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </div>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ export const Content = () => (
                                         Şehrin en iyi etkinlikleri
                                     </div>
                                     <div class="node-content">
-                                        Etkinlik analizi ve satış istatiklerini takip edebilir ve katılımcılar hakkında demografik bilgileri inceleyebilirsiniz.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ export const Content = () => (
                                     Biletlerini 9 saniyede al
                                 </div>
                                 <div class="node-content">
-                                    Günlük satışları takip edebilir, yeni etkinlik biletleri yaratabilir, satış kanallarınızı anında güncelleyebilirsiniz.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export const Content = () => (
                                     Okut ve Geç
                                 </div>
                                 <div class="node-content">
-                                    Ekibinizi kurup, ekip üyelerine özel görevler atayabilir, erişim kısıtlamaları getirebilirsiniz.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 </div>
                             </div>
                             <div class="col-sm-2"></div>
