@@ -2,11 +2,15 @@ import React from 'react';
 import { Content } from './Content';
 import { Banner } from './Banner';
 import { Download } from './Download';
+import { Video } from './Video';
 
 export const Main = () => (
     <div>
         <div id="section1" className="container-fluid">
             <Banner />
+        </div>
+        <div id="section2" className="container-fluid">
+            <Video/>
         </div>
         <div id="section4" className="container-fluid">
             <Content />

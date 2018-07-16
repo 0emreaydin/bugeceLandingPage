@@ -37,9 +37,9 @@ body {
 
 #section2 {
   padding-top:50px;
-  height:200px;
+  height:100vh;
   color: #000; 
-  background-color: #ffffff;
+  background-color: #2b2b2b;
 }
 
 #section3 {
@@ -50,7 +50,7 @@ body {
 }
 
 #section4 {
-  padding-top:100px;
+  padding-top:70px;
   height:110vh;
   color: #000; 
   background-color: #fff;
@@ -61,7 +61,7 @@ body {
   background-image: url('./images/phoneBanner.png');
   height:85vh;
   background-repeat: no-repeat;
-  background-size: 45vh;
+  background-size: 40vh;
   background-position: center;
 }
 
@@ -101,16 +101,21 @@ body {
   #section1 { padding-top: 70px; min-height: 1000px; padding-top: 40%;} 
   .btn{margin-top: -5rem;}
   .col-md-8#info{text-align: center;}
-  .col-md-6#divRight{background-size: 40vh; margin-top: 60%;}
+  .col-md-6#divRight{background-size: 35vh; margin-top: 65%;}
   .col-md-6#divLeft > .center-element{margin-left: 0%}
   .col-md-12 p {margin-left: 10%; width: 100%;}
-  #section4{min-height: 1800px;}
+  #section4{min-height: 1370px;}
+  #section2{min-height: 660px; padding-top: 50px;}
   .navbar-inverse { background-color: #343a40; border-color: black; }
-  #store .row{ height: 100%; }
-  #store .row .col-md-6{ height: 100px; }
+  #store .row{ height: 100px; margin-top:-15%;}
+  #store .row .col-md-5{ height: 100px; }
   .navbar-inverse .navbar-brand{ color:white;}
   .navbar-inverse .navbar-nav>li>a { color:white; }
+  .row .videoWrapper { height: 30%; width: 100%; }
+  .row .col-md-3#info-content  { height: 65%;}
 }
+
+.col-md-3#info-content  { height: 80%;}
 
 #download{
   width: 50%;
@@ -248,7 +253,7 @@ a.btn.disabled,fieldset:disabled a.btn{
 
 #store{
   width: 80%;
-  min-height: 100px;
+  min-height: 200px;
   margin-top: 15%;
   position: absolute;
   left: 50%;
@@ -278,11 +283,6 @@ a.btn.disabled,fieldset:disabled a.btn{
 }
 
 .col-md-4 > img{
-  height: 100%;
-}
-
-.col-md-12{
-  width: 100%;
   height: 100%;
 }
 
@@ -317,4 +317,58 @@ a.btn.disabled,fieldset:disabled a.btn{
   width: 70%;
   margin: 0 auto;
   margin-top:3%;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-top: 25px;
+  height: 90%;
+  width: 72%;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#video-info{
+  height: 100%;
+}
+
+#video-info .col-md-12{
+  height: 20%;
+}
+
+.info-rows{
+  height: 100%;
+}
+
+.info-rows .col-md-8{
+  color:white; 
+  height: 100%;
+}
+
+.info-rows .col-md-8 h6{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.info-rows .col-md-4 img{
+  width: auto; 
+  height: 70%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+}
+
+.active-info{
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  background: #4b4b4b;
+  
 }

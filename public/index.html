@@ -29,7 +29,66 @@
             });
           }
         });
+        window.setInterval(function(){
+        }, 1000);
       });
+    </script>
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'Dys1_TuUmI4', //linkin sonundaki id
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      function onPlayerStateChange(event) {
+        var divContainer = document.getElementById("video-info");
+        var divs = divContainer.getElementsByClassName("col-md-12");
+
+        function setActiveInfo(nextDiv) {
+          var current = document.getElementsByClassName("active-info");
+          current[0].className = current[0].className.replace(" active-info", "");
+          nextDiv.className += " active-info";
+        }
+
+        if (event.data == YT.PlayerState.PLAYING) {
+          window.setInterval(function(){
+            var curTime = player.getCurrentTime();
+            console.log(curTime);
+            if(curTime < 10){
+              setActiveInfo(divs[0]);
+            }
+            if(curTime > 10  && curTime < 20){
+              setActiveInfo(divs[1]);
+            }
+            else if(curTime > 20 && curTime < 30){
+              setActiveInfo(divs[2]);
+            }
+            else if(curTime > 30  && curTime < 40){
+              setActiveInfo(divs[3]);
+            }
+            else if(curTime > 40){
+              setActiveInfo(divs[4]);
+            }
+          }, 1000);
+        }
+      }
     </script>
   </body>
 </html>

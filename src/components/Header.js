@@ -15,6 +15,7 @@ export const Header = () => (
        <div className="collapse navbar-collapse" id="myNavbar">
         <ul className="nav navbar-nav ml-auto">
          <li><a href="#section1">Bugece App</a></li>
+         <li><a href="#section2">???</a></li>
          <li><a href="#section4">Neden Bu Gece</a></li>
          <li><a href="#section3">İletişim</a></li>
         </ul>
