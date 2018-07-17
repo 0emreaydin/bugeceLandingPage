@@ -8,11 +8,11 @@
   border-color: transparent;
 }
 .navbar-inverse .navbar-nav>li>a {
-  color:black;
+  color:white;
 }
 
 .navbar-inverse .navbar-brand{
-  color:black;
+  color:white;
 }
 
 .col-md-12#bannerLogo{
@@ -103,7 +103,7 @@ body {
   .col-md-8#info{text-align: center;}
   .col-md-6#divRight{background-size: 35vh; margin-top: 65%;}
   .col-md-6#divLeft > .center-element{margin-left: 0%}
-  .col-md-12 p {margin-left: 10%; width: 100%;}
+  .col-md-12 p {width: 100%;}
   #section4{min-height: 1370px;}
   #section2{min-height: 660px; padding-top: 50px;}
   .navbar-inverse { background-color: #343a40; border-color: black; }
@@ -115,7 +115,7 @@ body {
   .row .col-md-3#info-content  { height: 65%;}
 }
 
-.col-md-3#info-content  { height: 80%;}
+.col-md-3#info-content  { height: 90%;}
 
 #download{
   width: 50%;
@@ -343,6 +343,7 @@ a.btn.disabled,fieldset:disabled a.btn{
 
 .info-rows{
   height: 100%;
+  border: 1px solid #3b3b3b;
 }
 
 .info-rows .col-md-8{
@@ -352,8 +353,9 @@ a.btn.disabled,fieldset:disabled a.btn{
 
 .info-rows .col-md-8 h6{
   position: absolute;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   top: 50%;
+  font-size: 24px;
 }
 
 .info-rows .col-md-4 img{
